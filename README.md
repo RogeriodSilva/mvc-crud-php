@@ -22,7 +22,6 @@
         o nome da correspondente ao banco de dados. <strong>Ex.: table users > User.php</strong>
     </p>
     <h4>Insert</h4>
-
    ```PHP
     use App\Models\User;
 
@@ -32,6 +31,11 @@
         'password' => '1234' // Sem censura;
     ]);
    ```
+    <h4>Find</h4>
+   ```PHP
+    use App\Models\User;
 
-
+    User::find(1) // Retorna o user com id = 1;
+    User::find('RogeriodSilva', 'name') // Retorna o user com 'name' = 'RogeriodSilva'
+   ```
 </div>
