@@ -21,27 +21,92 @@
         Para o CRUD funcionar de forma correta ele necessita de uma class com
         o nome da correspondente ao banco de dados. <strong>Ex.: table users > User.php</strong>
     </p>
-    <h4>Insert</h4>
 
-   ```PHP
+    <div>
+        <h4>Insert</h4>
+    </div>
+
+    ```PHP
     use App\Models\User;
 
     User::insert([
-        'name' => 'RogeriodSilva',
-        'email' => 'ro@email.com',
-        'password' => '1234' // Sem censura;
+    'name' => 'RogeriodSilva',
+    'email' => 'ro@email.com',
+    'password' => '1234' // Sem censura;
     ]);
-   ```
+    ```
 
-   <div>
+    <div>
         <h4>Find</h4>
-   </div>
+        <p>
+            Encontrar um user pelo key(id) = 1, com isso
+            retorno um objeto com os valores no banco de
+            dados.
 
-   ```PHP
+        </p>
+    </div>
+
+    ```PHP
     use App\Models\User;
 
     User::find(1) // Retorna o user com id = 1;
     User::find('RogeriodSilva', 'name') // Retorna o user com 'name' = 'RogeriodSilva'
-   ```
-   
+    ```
+
+    <div>
+        <h4>Get</h4>
+        <p>
+            Mesmo proposito do find, mas retorna uma listagem
+            ao invés de apenas um valor do banco.
+        </p>
+    </div>
+
+    ```PHP
+    use App\Models\User;
+
+    User::get('RogeriodSilva', 'name') // Retorna todos user com 'name' = 'RogeriodSilva'
+    ```
+
+    <div>
+        <h4>All</h4>
+        <p>
+            Retorna todos os elementos do banco.
+        </p>
+    </div>
+
+    ```PHP
+    use App\Models\User;
+
+    User::all() // Retorna todos user
+    ```
+
+    <div>
+        <h4>Delete</h4>
+        <p>
+            Faz uma verificação se existe um elemento no
+            banco com o mesmo id, caso tenha será deletado
+        </p>
+    </div>
+
+    ```PHP
+    use App\Models\User;
+
+    User::delete(1) // Deleta o user com id = 1
+    ```
+
+    <div>
+        <h4>Update</h4>
+        <p>
+            No $_POST deve haver um input:hidden com o nome 'id'
+            para que seja encontrado o elemento com id igual,
+            assim atualizando os dados de acordo com o banco.
+        </p>
+    </div>
+
+    ```PHP
+    use App\Models\User;
+
+    User::delete(1) // Deleta o user com id = 1
+    ```
+
 </div>
