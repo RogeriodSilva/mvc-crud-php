@@ -1,3 +1,7 @@
+<div>
+    <h4>Inicialização</h4>
+    <p>utilize: php -S localhost:8000 -t "public/"</p>
+</div>
 <h4>Requesitos</h4>
 <ul>
     <li>PHP - 8.4^</li>
