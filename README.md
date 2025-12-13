@@ -21,9 +21,10 @@
         Para o CRUD funcionar de forma correta ele necessita de uma class com
         o nome da correspondente ao banco de dados. <strong>Ex.: table users > User.php</strong>
     </p>
-
     <h4>Insert</h4>
-    use App\Models\User;
+</div>
+
+  use App\Models\User;
 
     User::insert([
         'name' => 'RogeriodSilva',
@@ -31,5 +32,3 @@
         'password' => '1234' // Sem censura;
     ]);
 
-
-</div>
