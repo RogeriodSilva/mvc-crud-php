@@ -19,9 +19,6 @@
     <h3>Funcionalidade</h3>
     <p>
         Para o CRUD funcionar de forma correta ele necessita de uma class com 
-        o nome da correspondente ao banco de dados. Ex.: users > User.php
-    </p>
-    <p>
-
+        o nome da correspondente ao banco de dados. <strong>Ex.: users > User.php</strong>
     </p>
 </div>
