@@ -33,7 +33,9 @@
     ]);
    ```
 
-    <h4>Find</h4>
+   <div>
+        <h4>Find</h4>
+   </div>
 
    ```PHP
     use App\Models\User;
