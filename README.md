@@ -22,7 +22,7 @@
         o nome da correspondente ao banco de dados. <strong>Ex.: table users > User.php</strong>
     </p>
 
-
+    <h4>Insert</h4>
     use App\Models\User;
 
     User::insert([
