@@ -19,6 +19,17 @@
     <h3>Funcionalidade</h3>
     <p>
         Para o CRUD funcionar de forma correta ele necessita de uma class com 
-        o nome da correspondente ao banco de dados. <strong>Ex.: users > User.php</strong>
+        o nome da correspondente ao banco de dados. <strong>Ex.: table users > User.php</strong>
+    </p>
+    <p>
+
+        use App\Models\User;
+
+        User::insert([
+            'name' => 'RogeriodSilva',
+            'email' => 'ro@email.com',
+            'password' => '1234' // Sem censura;
+        ]);
+
     </p>
 </div>
