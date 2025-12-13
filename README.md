@@ -41,7 +41,6 @@ User::insert([
         Encontrar um user pelo key(id) = 1, com isso
         retorno um objeto com os valores no banco de
         dados.
-
     </p>
 </div>
 
