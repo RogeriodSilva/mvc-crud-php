@@ -108,5 +108,8 @@ User::delete(1) // Deleta o user com id = 1
 ```PHP
 use App\Models\User;
 
-User::delete(1) // Deleta o user com id = 1
+User::delete([
+    'id' => 1,
+    'name' => "roger"
+]) // Atuliza os dados do user com id = 1
 ```
