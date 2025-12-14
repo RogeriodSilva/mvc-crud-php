@@ -115,6 +115,6 @@ abstract class Database
         return $object->query(
             sql: "SELECT * FROM $object->table WHERE $key = ? LIMIT 1",
             params: [$value]
-        )->fetchAll(PDO::FETCH_OBJ);
+        )->fetch(PDO::FETCH_OBJ);
     }
 }
